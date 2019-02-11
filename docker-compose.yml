@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      GMAIL_USERNAME:
+      GMAIL_PASSWORD:
+      GMAIL_LABEL:
+    volumes:
+      - '.:/app'
